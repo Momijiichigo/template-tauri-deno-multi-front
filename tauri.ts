@@ -12,14 +12,13 @@ const command = new Deno.Command('deno', {
   args: [
     'run',
     '--unstable',
-    '--node-modules-dir',
     'npm:@tauri-apps/cli@next',
     ...Deno.args,
     `--config=${
       JSON.stringify({
 	build: {
-	  beforeDevCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A npm:vite`,
-	  beforeBuildCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A npm:vite build`,
+	  beforeDevCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A --node-modules-dir npm:vite`,
+	  beforeBuildCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A --node-modules-dir npm:vite build`,
 	  distDir: `../front/${FRONT_FRAMEWORK}/dist`,
 	}
       })

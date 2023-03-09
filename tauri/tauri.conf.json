@@ -5,7 +5,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "Lakla",
+    "productName": "Tauri",
     "version": "0.0.0"
   },
   "tauri": {
@@ -31,7 +31,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.musubi.lakla.app",
+      "identifier": "com.tauri.app",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -60,7 +60,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "Lakla",
+        "title": "Tauri",
         "width": 800
       }
     ]

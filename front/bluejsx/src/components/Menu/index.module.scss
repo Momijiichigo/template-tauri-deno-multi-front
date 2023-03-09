@@ -1,0 +1,64 @@
+.menu {
+    position: fixed;
+    bottom: 0;
+    height: var(--menu-height);
+    height: calc(env(safe-area-inset-bottom) + var(--menu-height));
+    width: 100%;
+    z-index: 100000;
+    overflow: hidden;
+    background-color: black;
+    // padding-bottom: env(safe-area-inset-bottom);
+}
+
+.bar {
+    position: absolute;
+    // top: 0;
+    // bottom: env(safe-area-inset-bottom);
+    width: 100%;
+    height: var(--menu-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    mix-blend-mode: exclusion;
+    color: white;
+    font-size: 2em;
+    pointer-events: none;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mark_container {
+    position: absolute;
+    // bottom: env(safe-area-inset-bottom);
+    width: 100%;
+    height: var(--menu-height);
+    // height: 100%;
+    z-index: 9;
+    filter: url(#goo);
+    // margin-bottom: env(safe-area-inset-bottom);
+}
+
+.dot {
+    position: absolute;
+    // visibility: hidden;
+    border-radius: 50%;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    // left: 0;
+    bottom: 0;
+    // right: 0;
+    margin: auto;
+}
+
+.pointer {
+    &.released {
+        // transition: none;
+        transition: transform 0.1s ease-in-out;
+    }
+}
+
+.mark {
+    transition: transform 0.2s ease-in-out;
+}

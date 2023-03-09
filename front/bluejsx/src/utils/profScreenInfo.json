@@ -1,0 +1,37 @@
+{
+    "tree": [
+        {
+            "type": "text",
+            "content": "Hello, world!",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 100,
+                "height": 100,
+                "rotation": 0
+            }
+        },
+        {
+            "type": "img",
+            "content": "https://path.to.link",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 100,
+                "height": 100,
+                "rotation": 0
+            }
+        },
+        {
+            "type": "text",
+            "content": "Hello, world!",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 100,
+                "height": 100,
+                "rotation": 0
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+.app_container {
+    
+}
+.fixed_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000;
+    transition: transform 0.5s ease-in-out;
+    &.hide {
+        transform: translateY(100%);
+    }
+}
+
+.loading_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1100000;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #000000cc;
+    color: white;
+    font-size: 1.7em;
+    &.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .center_box{
+        position: inherit;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+}

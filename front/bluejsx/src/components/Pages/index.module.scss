@@ -1,0 +1,22 @@
+.container {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - var(--menu-height));
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    >* {
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - var(--menu-height));
+        height: calc(100vh - var(--menu-height) - env(safe-area-inset-bottom));
+        z-index: -1;
+        opacity: 0;
+    }
+
+    >.focus {
+        z-index: 1;
+        opacity: 1;
+    }
+}

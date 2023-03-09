@@ -1,0 +1,15 @@
+:root {
+    --menu-height: 50px;
+    --color-menu-bg: rgb(52, 52, 115);
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: 100vh;
+}

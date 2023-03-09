@@ -1,6 +1,7 @@
 {
   "build": {
     "devPath": "http://localhost:5173",
+    "distDir": "../front/solid/dist",
     "withGlobalTauri": false
   },
   "package": {

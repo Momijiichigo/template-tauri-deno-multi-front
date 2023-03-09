@@ -16,11 +16,11 @@ const command = new Deno.Command('deno', {
     ...Deno.args,
     `--config=${
       JSON.stringify({
-	build: {
-	  beforeDevCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A --node-modules-dir npm:vite`,
-	  beforeBuildCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A --node-modules-dir npm:vite build`,
-	  distDir: `../front/${FRONT_FRAMEWORK}/dist`,
-	}
+        build: {
+          beforeDevCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A --node-modules-dir npm:vite`,
+          beforeBuildCommand: `cd front/${FRONT_FRAMEWORK} && deno run -A --node-modules-dir npm:vite build`,
+          distDir: `../front/${FRONT_FRAMEWORK}/dist`,
+        }
       })
     }`,
   ]

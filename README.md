@@ -15,7 +15,7 @@ Cuz I dislike Node.
 ## Commands
 
 ```sh
-deno run -A scripts/tauri.ts <...tauri CLI options...>
+deno run -A tauri.ts <...tauri CLI options...>
 ```
 
 ## Switch Frontend Framework
